@@ -1,23 +1,23 @@
 /* Global styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f4f8; /* Soft off-white background */
+  background-color: #fff; 
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full height to prevent footer issues */
+  min-height: 100vh; 
 }
 
 header {
-  background-color: #00695c; /* Original greenish header */
-  color: white;
+  background-color: #c0cad2; 
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 20px;
 }
 
 nav a {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0 10px;
   text-decoration: none;
 }
@@ -28,15 +28,15 @@ nav a:hover {
 
 main {
   padding: 20px;
-  flex: 1; /* Ensures the main content fills available space */
+  flex: 1;
 }
 
-/* Add Post Form */
 #add-post-form {
-  background-color: white;
+  background-color: #ede7e2;
   padding: 30px;
+  padding-right: 60px;
   margin: 0 auto;
-  max-width: 1000px; /* Compact form */
+  max-width: 900px; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -44,7 +44,7 @@ main {
 #add-post-form h2 {
   font-size: 26px;
   margin-bottom: 20px;
-  color: #00695c; /* Greenish heading */
+  color: #1e151c; 
   text-align: center;
 }
 
@@ -53,7 +53,7 @@ form label {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 600;
-  color: #00695c; /* Consistent greenish label */
+  color: #1e151c; 
 }
 
 form input,
@@ -61,21 +61,21 @@ form select,
 form textarea,
 form button {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #92a9b8;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 form textarea {
   resize: vertical;
-  min-height: 80px; /* Compact textarea */
+  min-height: 80px; 
 }
 
 form button {
-  background-color: #00695c; /* Green button */
-  color: white;
+  background-color: #373748; 
+  color: #fff;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -83,20 +83,19 @@ form button {
 }
 
 form button:hover {
-  background-color: #004d40; /* Darker green button on hover */
+  background-color: #16284c; 
 }
 
 form input:focus,
 form select:focus,
 form textarea:focus {
-  border-color: #004d40; /* Focused input styling */
+  border-color: #004d40; 
   outline: none;
 }
 
-/* Footer */
 footer {
-  background-color: #00695c; /* Greenish footer */
-  color: white;
+  background-color: #c0cad2; 
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 10px;
   margin-top: 30px;
@@ -122,7 +121,6 @@ footer {
   }
 }
 
-/* Posts Container */
 #posts-container {
   display: flex;
   flex-wrap: wrap;
@@ -130,10 +128,9 @@ footer {
   gap: 20px;
 }
 
-/* Individual Post Box */
 .post {
-  position: relative; /* Allows absolute positioning of child elements like .status-box */
-  background-color: #fff;
+  position: relative; 
+  background-color: #d6e6f4;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -152,46 +149,44 @@ footer {
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: 5px 12px; /* Adjust padding for a compact look */
-  font-size: 12px; /* Slightly smaller font for compact design */
+  padding: 5px 12px; 
+  font-size: 12px;
   font-weight: bold;
-  color: white; /* White text for contrast */
-  border-radius: 20px; /* Fully rounded pill shape */
+  color: white; 
+  border-radius: 20px;
   text-align: center;
-  background-color: #60723a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for elevation */
-  z-index: 1; /* Ensure it stays above other elements */
+  background-color: #373748;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  z-index: 1; 
 }
 
-/* Hover Enhancements for Status Box */
 .status-box:hover {
-  opacity: 0.9; /* Slight transparency on hover */
-  transform: scale(1.05); /* Subtle zoom effect */
-  transition: all 0.3s ease; /* Smooth animation */
+  opacity: 0.9; 
+  transform: scale(1.05); 
+  transition: all 0.3s ease; 
 }
 
 .post h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #00695c; /* Consistent post title */
+  color: #2a2a3a; 
 }
 
 .post p {
   font-size: 14px;
-  color: #555; /* Light grey text for post description */
+  color: #2e2e39; 
   margin-bottom: 10px;
 }
 
 .post small {
   font-size: 12px;
-  color: #777; /* Grey text for additional info */
+  color: #4c4c52; 
   display: block;
   margin-bottom: 10px;
 }
 
-/* Delete Button */
 .delete-btn {
-  background-color: #e74c3c; /* Red delete button */
+  background-color: #7b0c0ce8; 
   color: white;
   padding: 10px 15px;
   border: none;
@@ -199,10 +194,10 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
-  display: block; /* Separate line */
-  width: 100%; /* Full width of the post */
+  display: block; 
+  width: 100%; 
 }
 
 .delete-btn:hover {
-  background-color: #c0392b; /* Darker red on hover */
+  background-color: #c0392b; 
 }
