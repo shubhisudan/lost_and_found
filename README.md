@@ -11,6 +11,9 @@ Responsive Design: The website is responsive and can be accessed on desktops, ta
 
 ### Technologies Used
 Frontend: HTML, CSS, JavaScript
+
 Backend: Node.js, Express
+
 Database: Postgres SQL
+
 Deployment: GitHub Pages (Frontend) / Vercel (Backend)
