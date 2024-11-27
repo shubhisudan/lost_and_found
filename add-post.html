@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Lost & Found Post | MyCollege</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Add Lost & Found Post</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-post.html">Add Post</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-post-form">
+      <h2>Post an Item</h2>
+      <form id="postForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required><br>
+      
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea><br>
+      
+        <label for="location">Location:</label>
+        <input type="text" id="location" required><br>
+      
+        <label for="contact_info">Contact Info (Email):</label>
+        <input type="email" id="contact_info" required><br>
+      
+        <label for="status">Status:</label>
+        <select id="status">
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select><br>
+      
+        <button type="submit">Submit Post</button>
+      </form>      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lost & Found | IGDTUW</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

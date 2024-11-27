@@ -1,0 +1,208 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Soft off-white background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height to prevent footer issues */
+}
+
+header {
+  background-color: #00695c; /* Original greenish header */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  flex: 1; /* Ensures the main content fills available space */
+}
+
+/* Add Post Form */
+#add-post-form {
+  background-color: white;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1000px; /* Compact form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-post-form h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #00695c; /* Greenish heading */
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #00695c; /* Consistent greenish label */
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px; /* Compact textarea */
+}
+
+form button {
+  background-color: #00695c; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004d40; /* Darker green button on hover */
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #004d40; /* Focused input styling */
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #00695c; /* Greenish footer */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #add-post-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  form label,
+  form input,
+  form select,
+  form textarea,
+  form button {
+    font-size: 14px;
+  }
+
+  #add-post-form h2 {
+    font-size: 22px;
+  }
+}
+
+/* Posts Container */
+#posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Post Box */
+.post {
+  position: relative; /* Allows absolute positioning of child elements like .status-box */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.status-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 12px; /* Adjust padding for a compact look */
+  font-size: 12px; /* Slightly smaller font for compact design */
+  font-weight: bold;
+  color: white; /* White text for contrast */
+  border-radius: 20px; /* Fully rounded pill shape */
+  text-align: center;
+  background-color: #60723a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for elevation */
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Hover Enhancements for Status Box */
+.status-box:hover {
+  opacity: 0.9; /* Slight transparency on hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.post h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00695c; /* Consistent post title */
+}
+
+.post p {
+  font-size: 14px;
+  color: #555; /* Light grey text for post description */
+  margin-bottom: 10px;
+}
+
+.post small {
+  font-size: 12px;
+  color: #777; /* Grey text for additional info */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c; /* Red delete button */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  display: block; /* Separate line */
+  width: 100%; /* Full width of the post */
+}
+
+.delete-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
